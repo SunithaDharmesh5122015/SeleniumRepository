@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 16 09:35:25 IST 2021</td>
+<td>Started on:</td><td>Tue Jan 26 11:02:10 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23393 ms)</td>
+<tr><td>Total time:</td><td>52 seconds (52590 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Demos.Web1.bt()'><b>bt</b><br>Test class: Demos.Web1</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Original error: Failed to connect to /0.0.0.0:4723
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: driver.version: AndroidDriver
@@ -94,7 +100,7 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at Demos.capability.capability(capability.java:24)
+	at Demos.capability.capabilities(capability.java:24)
 	at Demos.Web1.bt(Web1.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -127,42 +133,39 @@ Caused by: java.lang.reflect.InvocationTargetException
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
 	... 39 more
-Caused by: java.net.ConnectException: Failed to connect to /0.0.0.0:4723
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
 	... 44 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 63 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace554348863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace554348863'><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Original error: Failed to connect to /0.0.0.0:4723
+</pre></div><a href='#' onClick='toggleBox("stack-trace1552341957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1552341957'><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: driver.version: AndroidDriver
@@ -180,7 +183,7 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at Demos.capability.capability(capability.java:24)
+	at Demos.capability.capabilities(capability.java:24)
 	at Demos.Web1.bt(Web1.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -213,42 +216,33 @@ Caused by: java.lang.reflect.InvocationTargetException
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
 	... 39 more
-Caused by: java.net.ConnectException: Failed to connect to /0.0.0.0:4723
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
 	... 44 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 63 more
 </pre></div></td>
-<td>23</td>
+<td>52</td>
 <td>Demos.Web1@52feb982</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -260,7 +254,13 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 </tr>
 <tr>
 <td title='Demos.Web1.testCase1()'><b>testCase1</b><br>Test class: Demos.Web1</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Original error: Failed to connect to /0.0.0.0:4723
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: driver.version: AndroidDriver
@@ -278,7 +278,7 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at Demos.capability.capability(capability.java:24)
+	at Demos.capability.capabilities(capability.java:24)
 	at Demos.Web1.bt(Web1.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -311,42 +311,39 @@ Caused by: java.lang.reflect.InvocationTargetException
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
 	... 39 more
-Caused by: java.net.ConnectException: Failed to connect to /0.0.0.0:4723
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
 	... 44 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 63 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1889057031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1889057031'><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Original error: Failed to connect to /0.0.0.0:4723
+</pre></div><a href='#' onClick='toggleBox("stack-trace949684105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace949684105'><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: driver.version: AndroidDriver
@@ -364,7 +361,7 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at Demos.capability.capability(capability.java:24)
+	at Demos.capability.capabilities(capability.java:24)
 	at Demos.Web1.bt(Web1.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -397,40 +394,31 @@ Caused by: java.lang.reflect.InvocationTargetException
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
 	... 39 more
-Caused by: java.net.ConnectException: Failed to connect to /0.0.0.0:4723
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-I3EUG8M&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\SunithaS\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -r C:\\Users\\SunithaS\\AppData\\Local\\Temp\\2021026-15984-1thmgpu.j2xt\\appium-uiautomator2-server-v4.5.5.apk&apos; timed out after 20000ms&apos;. Try to increase the 20000ms adb execution timeout represented by &apos;uiautomator2ServerInstallTimeout&apos; capability
+    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
 	... 44 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 63 more
 </pre></div></td>
 <td>0</td>
 <td>Demos.Web1@52feb982</td></tr>

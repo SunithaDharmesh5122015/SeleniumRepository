@@ -13,15 +13,15 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class capability {
 
-	public static AndroidDriver<AndroidElement> capability() throws MalformedURLException {
+	public static AndroidDriver<AndroidElement> capabilities() throws MalformedURLException {
 		// TODO Auto-generated method stub
 		DesiredCapabilities cap= new DesiredCapabilities();
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME,"Sarala Android");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME,"Dharmesh Android");
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
 		cap.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome");
 		cap.setCapability(AndroidMobileCapabilityType.CHROMEDRIVER_EXECUTABLE,"C:\\Users\\SunithaS\\Downloads\\chromedriver_win32New\\chromedriver.exe");
-		AndroidDriver<AndroidElement> driver=new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"),cap);
+		AndroidDriver<AndroidElement> driver=new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		return driver;
 	}
 

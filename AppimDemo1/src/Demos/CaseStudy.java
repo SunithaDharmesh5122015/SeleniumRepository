@@ -23,7 +23,7 @@ public class CaseStudy extends capability {
 	@BeforeTest
 	public void bt() throws MalformedURLException
 	{
-		driver=capability();
+		driver=capabilities();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);	
 	}
 	
